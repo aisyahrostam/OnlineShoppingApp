@@ -11,9 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineShopping">
-        <activity
-            android:name=".CheckOut"
-            android:exported="true" />
+
         <activity
             android:name=".Add_ToCart_Activity"
             android:exported="true" />
