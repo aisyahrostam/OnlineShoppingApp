@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_searchBar"
+        app:showAsAction="always"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+
+    </item>
+
+    <item
+        android:id="@+id/action_sortAZ"
+        android:title="Item Name A - Z"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_sortZA"
+        app:showAsAction="never"
+        android:title="Item Name Z-A">
+
+    </item>
+    <item
+        android:id="@+id/action_sortBrandAZ"
+        android:title="Item Brand A - Z"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_sortBrandZA"
+        app:showAsAction="never"
+        android:title="Item Brand Z-A">
+
+    </item>
+<!--    <item-->
+<!--        android:id="@+id/action_priceAscending"-->
+<!--        app:showAsAction="never"-->
+<!--        android:title="Price : Lowest - Highest">-->
+
+<!--    </item>-->
+<!--    <item-->
+<!--        android:id="@+id/action_priceDescending"-->
+<!--        app:showAsAction="never"-->
+<!--        android:title="Price : Highest-Lowest">-->
+
+<!--    </item>-->
+
+</menu>
