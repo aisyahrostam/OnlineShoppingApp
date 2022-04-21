@@ -3,9 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_home_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_addstock.xml" value="0.2203125" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_basket.xml" value="0.2203125" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_Feedback.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_add_to_cart.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_admin_home_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_admin_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_check_out.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_feed_back.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_feedback.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_home_page.xml" value="0.22" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_items.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_rating.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_shopping_basket.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_shopping_cart.xml" value="0.19831223628691982" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_stock.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_stock_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/cart_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/items_layout.xml" value="0.25" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/profile_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/stock_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/admin_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/cart_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/abdsa/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/search_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
