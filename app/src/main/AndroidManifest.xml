@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.onlineshopping">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineShopping">
+        <activity
+            android:name=".CheckOut"
+            android:exported="true" />
+        <activity
+            android:name=".Add_ToCart_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".StockListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StockActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminHomePageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ItemsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShoppingCart"
+            android:exported="true" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
