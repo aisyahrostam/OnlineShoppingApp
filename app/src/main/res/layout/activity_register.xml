@@ -8,9 +8,69 @@
     tools:context=".RegisterActivity">
 
     <EditText
+        android:id="@+id/card"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:background="@color/pastelOrange"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="textPostalAddress"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <EditText
+        android:id="@+id/pin"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:background="@color/pastelOrange"
+        android:ems="10"
+        android:hint="Pin"
+        android:inputType="textPostalAddress"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:background="@color/pastelOrange"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <EditText
         android:id="@+id/name"
         android:layout_width="288dp"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:background="@color/pastelOrange"
         android:ems="10"
         android:hint="Name  "
@@ -25,12 +85,12 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintVertical_bias="0.176" />
 
     <EditText
         android:id="@+id/phoneNumber"
         android:layout_width="288dp"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:background="@color/pastelOrange"
         android:ems="10"
         android:hint="Phone Number  "
@@ -45,12 +105,12 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintVertical_bias="0.279" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="288dp"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:background="@color/pastelOrange"
         android:ems="10"
         android:hint="Email  "
@@ -65,12 +125,12 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintVertical_bias="0.384" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="288dp"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:background="@color/pastelOrange"
         android:ems="10"
         android:hint="Password"
@@ -85,7 +145,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728" />
+        app:layout_constraintVertical_bias="0.486" />
 
     <Button
         android:id="@+id/registerUser"
@@ -98,11 +158,11 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883" />
+        app:layout_constraintVertical_bias="0.908" />
 
     <TextView
         android:id="@+id/banner"
-        android:layout_width="171dp"
+        android:layout_width="160dp"
         android:layout_height="59dp"
         android:text="Register"
         android:textColor="@color/white"
@@ -112,7 +172,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.05" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

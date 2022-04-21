@@ -30,7 +30,7 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView banner, registerUser;
-    private EditText EDTname, EDTphoneNumber, EDTemail, EDTpassword;
+    private EditText EDTname, EDTphoneNumber, EDTemail, EDTpassword, EDTaddress, EDTcard, EDTpin;
 
     private FirebaseAuth mAuth;
     FirebaseFirestore db;
@@ -52,6 +52,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         EDTphoneNumber = (EditText) findViewById(R.id.phoneNumber);
         EDTemail = (EditText) findViewById(R.id.email);
         EDTpassword = (EditText) findViewById(R.id.password);
+        EDTaddress = (EditText) findViewById(R.id.address);
+        EDTcard = (EditText) findViewById(R.id.card);
+        EDTpin = (EditText) findViewById(R.id.pin);
     }
 
     @Override
@@ -72,7 +75,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         String password = EDTpassword.getText().toString().trim();
         String name = EDTname.getText().toString().trim();
         String phoneNumber = EDTphoneNumber.getText().toString().trim();
-
+        String address = EDTaddress.getText().toString().trim();
+        String card = EDTcard.getText().toString().trim();
+        String pin = EDTpin.getText().toString().trim();
         if (name.isEmpty()) {
             EDTname.setError("Full name is required");
             EDTname.requestFocus();
@@ -107,6 +112,38 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             return;
         }
 
+        if (address.isEmpty()) {
+            EDTaddress.setError("Address is required");
+            EDTaddress.requestFocus();
+            return;
+        }
+        if (address.length() < 6) {
+            EDTaddress.setError("Address must be 6 or more characters");
+            EDTaddress.requestFocus();
+            return;
+        }
+        if (card.isEmpty()) {
+            EDTcard.setError("Card is required");
+            EDTcard.requestFocus();
+            return;
+        }
+        if (card.length() < 16) {
+            EDTcard.setError("Card number must be 16");
+            EDTcard.requestFocus();
+            return;
+        }
+        if (pin.isEmpty()) {
+            EDTpin.setError("Pin is required");
+            EDTpin.requestFocus();
+            return;
+        }
+
+        if (pin.length() > 3) {
+            EDTpin.setError("Pin can only be 3 digits");
+            EDTpin.requestFocus();
+            return;
+        }
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -119,6 +156,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             user.put("Email", email);
                             user.put("Name", name);
                             user.put("Phone Number", phoneNumber);
+                            user.put("Address", address);
+                            user.put("Card Number", card);
+                            user.put("Pin", pin);
                             db.collection("user")
                                     .add(user)
                                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
