@@ -5,15 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Paint;
-import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -28,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView register;
     private EditText EDTemail, EDTpassword;
-    private Button login;
+    private Button login, admin;
 
     private FirebaseAuth mAuth;
 
@@ -44,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         login = (Button) findViewById(R.id.login);
         login.setOnClickListener(this);
+
+        admin = (Button) findViewById(R.id.admin);
+        admin.setOnClickListener(this);
 
         EDTemail = (EditText) findViewById(R.id.email);
         EDTpassword = (EditText) findViewById(R.id.password);
@@ -64,8 +63,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 userLogin();
                 break;
 
-
+            case R.id.admin:
+                adminLogin();
+                break;
         }
+    }
+
+    private void adminLogin() {
+        Toast.makeText(MainActivity.this, "Change to admin", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(MainActivity.this, AdminLoginActivity.class));
+        finish();
     }
 
     private void userLogin() {
